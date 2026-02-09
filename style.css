@@ -60,3 +60,27 @@ nav {
 .dropdown:hover .submenu {
     display: block;
 }
+
+#page-suivante:link,
+#page-suivante:visited {
+  background-color: Tomato;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+#page-suivante:hover,
+#page-suivante:active {
+  background-color: Coral;
+}
+h1 {
+  text-align: center; 
+  margin-top: 25px; 
+  color: DarkSlateGray;
+}
