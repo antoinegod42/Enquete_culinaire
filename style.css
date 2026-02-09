@@ -11,7 +11,7 @@ body {
 
 /* Menu principal */
 nav {
-    background-color: #8b0000;
+    background-color: E9967A;
 }
 
 .menu {
@@ -31,14 +31,14 @@ nav {
 }
 
 .menu > li > a:hover {
-    background-color: #a52a2a;
+    background-color: FFA07A;
 }
 
 /* Sous-menu */
 .submenu {
     display: none;
     position: absolute;
-    background-color: #a52a2a;
+    background-color: FFA07A;
     list-style: none;
     top: 100%;
     left: 0;
@@ -62,5 +62,5 @@ nav {
 }
 
 body {
-  background-color: lightblue;
+  background-color: FFDAB9;
 }
