@@ -111,3 +111,7 @@ table.info td {
   background-color: lightsalmon; 
   color:white;
 }
+#personnes {
+  width: 45px; 
+  padding: 5px
+}
