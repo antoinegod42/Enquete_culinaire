@@ -86,10 +86,43 @@ nav {
 h1 {
   text-align: center; 
   margin-top: 25px; 
-  color: DarkSlateGray;
 }
 ul.a {
   list-style-type: circle;
   list-style-position: inside;
   padding-left: 0;
+}
+h1,h3,p,label,ul.a,ol {
+  color: DarkSlateGray;
+}
+ol.recette {
+  list-style-type: decimal; 
+  padding-left: 33%;
+
+}
+ol.recette li {
+  margin-bottom: 5px;
+}
+
+table.info {
+  width: 75%;               
+  margin: 20px auto;        
+  border-collapse: collapse; 
+  text-align: center;
+}
+
+table.info th,
+table.info td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+table.info th {
+  background-color: Tomato; 
+  color: white;
+}
+
+table.info td {
+  background-color: lightsalmon; 
+  color:white;
 }
