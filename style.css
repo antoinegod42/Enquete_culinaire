@@ -12,11 +12,14 @@ body {
 
 nav {
     background-color: Tomato;
+    display: flex
 }
 
 .menu {
     list-style: none;
     display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .menu li {
@@ -60,6 +63,9 @@ nav {
 .dropdown:hover .submenu {
     display: block;
 }
+.menu .next {
+  margin-left: auto;
+}
 
 #page-suivante:link,
 #page-suivante:visited {
@@ -69,18 +75,21 @@ nav {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  position: fixed;
-  right: 0px;
-  text-decoration: none;
   z-index: 1000;
 }
 
 #page-suivante:hover,
 #page-suivante:active {
   background-color: Coral;
+
 }
 h1 {
   text-align: center; 
   margin-top: 25px; 
   color: DarkSlateGray;
+}
+ul.a {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 0;
 }
