@@ -148,6 +148,7 @@ h1 {
 h3 {
   font-size: 4vw
 }
-p, li,label,tr,td,th {
-  font-size: 2vw
+p, li, label, tr, td, th {
+  font-size: clamp(14px, 1.5vw, 20px);
 }
+
