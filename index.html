@@ -9,83 +9,72 @@
 </head>
 <body>
 
-<div id="menu-container"></div>
+<nav>
+    <ul class="menu">
+      <li id ="titre">Enquête culinaire</li>
+        <li><a href="index.html">Accueil</a></li>
 
-<script>
-fetch("menu.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("menu-container").innerHTML = data;
-  });
-</script>
-<main class="main-content">
-  <h1 class="main-title">Enquête culinaire</h1>
+        <li class="dropdown">
+            <a href="#">Entrées</a>
+            <ul class="submenu">
+                <li><a href="entree1.html">entree1</a></li>
+                <li><a href="entree2.html">entree2</a></li>
+                <li><a href="entree3.html">entree3</a></li>
+            </ul>
+        </li>
 
-  <section class="section">
-    <h2 class="section-title">Pourquoi choisir la cuisine française ?</h2>
-    <ul class="list">
-      <li>Grande diversité de plats</li>
-      <li>Recettes traditionnelles connues mondialement</li>
+        <li class="dropdown">
+            <a href="#">Plats</a>
+            <ul class="submenu">
+                <li><a href="plat1.html">plat1</a></li>
+                <li><a href="plat2.html">plat2</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Desserts</a>
+            <ul class="submenu">
+                <li><a href="dessert1.html">La crème brulée</a></li>
+                <li><a href="dessert2.html">La mousse au chocolat</a></li>
+                <li><a href="dessert3.html">La tarte tatin</a></li>
+            </ul>
+        </li>
     </ul>
-  </section>
 
-  <section class="section">
-    <h2 class="section-title">Comment utiliser ce site</h2>
-    <ol class="list">
-      <li>Choisir une catégorie (Entrées / Plats / Desserts)</li>
-      <li>Cliquer sur une recette</li>
-      <li>Suivre les étapes</li>
-    </ol>
-  </section>
+</nav>
+<center>
+  <h1>Enquête culinaire  </h1><br>
+<img src = "https://lelivrevert.fr/cdn/shop/articles/PEPITE25_1_3116326e-c370-4f34-8d51-2fe649624795.png?v=1761374292&width=1200" width = 50%><br>
+<p>Bienvenue sur notre site de recette française traditonnelles française.<br>Vous pourrez retrouver les meilleurs recettes traditionnelles et emblématiques de la France.<br> Sur cette page, vous retrouverez <a href = "#derniere recette">nos dernières recettes</a> ainsi qu'un classement de <a href="#recette prefere">vos recettes préférées</a></p><br>
+  
+<h3 id = "derniere recette">Nos dernières recettes</h3><br>
+  
+</center>
+<div class="container">
+  <img src="imaged'entrée" alt="Entree" class="image">
+  <p>Voici un texte placé à côté de l’image.</p>
+</div><br>
+  
+<a href = "plat1.html" class = "lien-image">
+<div class="container">
+  <img src="https://unjouruneepice.com/modules/ph_simpleblog/covers/45.jpg" alt="Description" class="image">
+  <p>La ratatouille est un plat traditionnel du sud de la France, originaire de Nice.<br>
+C’est une spécialité provençale simple...</p>
+</div><br></a>
 
-  <section class="section">
-    <h2 class="section-title">Résumé des catégories</h2>
-    <table class="tableau">
-      <tr>
-        <th>Catégorie</th>
-        <th>Nombre de pages</th>
-        <th>Exemple</th>
-      </tr>
-      <tr>
-        <td>Entrées</td>
-        <td>3</td>
-        <td>Salade niçoise<br>
-        Escargots de Bourgogne<br>
-        Quiche lorraine
-        </td>
-      </tr>
-      <tr>
-        <td>Plats</td>
-        <td>3</td>
-        <td>La ratatouille <br>
-        Bœuf bourguignon<br>
-        Plat 3</td>
-      </tr>
-      <tr>
-        <td>Desserts</td>
-        <td>3</td>
-        <td>Crème brûlée<br>
-        Mousse au chocolat<br>
-        Tarte Tatin</td>
-      </tr>
-    </table>
-  </section>
-
-  <section class="section">
-    <p>Pour en savoir plus sur la cuisine française :</p>
-    <a href="https://fr.wikipedia.org/wiki/Cuisine_fran%C3%A7aise" target="_blank" class="external-link">Cuisine française (Wikipedia)</a>
-  </section>
-
-  <section class="section">
-    <p><a href="#sources" class="anchor-link">Voir les sources</a></p>
-  </section>
-</main>
-
-<footer id="sources" class="footer">
-  <h3>Sources</h3>
-  <p>Wikipedia - Cuisine française</p>
-  <p>Site de recettes (exemple)</p>
-</footer>
-
-</body>
+<a href = "dessert2.html" class = "lien-image">
+<div class="container">
+  <img src="https://www.cookomix.com/wp-content/uploads/2016/04/mousse-au-chocolat-thermomix.jpg" alt="Description" class="image">
+  <p>La mousse au chocolat est un dessert simple mais délicieux.<br>
+Elle est réalisée à base de chocolat noir fondu...</p>
+</div></a><br>
+<center>
+<h3 id ="recette prefere">Vos recettes préférées</h3><br>
+</center>
+<ol class ="recette">
+  <li>La mousse au chocolat</li>
+  <li>La crème brulée</li>
+  <li>La ratatouille</li>
+</ol>
+</body> 
 </html>
