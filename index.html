@@ -9,39 +9,15 @@
 </head>
 <body>
 
-<nav>
-    <ul class="menu">
-      <li id ="titre">Enquête culinaire</li>
-        <li><a href="index.html">Accueil</a></li>
+<div id="menu-container"></div>
 
-        <li class="dropdown">
-            <a href="#">Entrées</a>
-            <ul class="submenu">
-                <li><a href="entree1.html">entree1</a></li>
-                <li><a href="entree2.html">entree2</a></li>
-                <li><a href="entree3.html">entree3</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#">Plats</a>
-            <ul class="submenu">
-                <li><a href="plat1.html">plat1</a></li>
-                <li><a href="plat2.html">plat2</a></li>
-            </ul>
-        </li>
-
-        <li class="dropdown">
-            <a href="#">Desserts</a>
-            <ul class="submenu">
-                <li><a href="dessert1.html">La crème brulée</a></li>
-                <li><a href="dessert2.html">La mousse au chocolat</a></li>
-                <li><a href="dessert3.html">La tarte tatin</a></li>
-            </ul>
-        </li>
-    </ul>
-
-</nav>
+<script>
+fetch("menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+  });
+</script>
 <center>
   <h1>Enquête culinaire  </h1><br>
 <img src = "https://lelivrevert.fr/cdn/shop/articles/PEPITE25_1_3116326e-c370-4f34-8d51-2fe649624795.png?v=1761374292&width=1200" width = 50%><br>
