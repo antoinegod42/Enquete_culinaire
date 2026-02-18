@@ -132,7 +132,8 @@ table.info td {
   letter-spacing: 2px;
 }
 .section {
-    margin: 30%;
+    margin: 25px auto;
+    margin-left: 20%;
     width: 85%;
 }
 .section-title {
