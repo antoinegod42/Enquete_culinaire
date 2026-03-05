@@ -19,3 +19,80 @@ fetch("menu.html")
   });
 </script>
   
+<center>
+<h1> Le QCM</h1><br>
+<p>Bienvenue sur la page de notre qcm.<br> Vous pourrez tester vos connaissances ici.<br>Bonne chance !</p>
+</center>
+  
+<div class ="question">
+<br><h3>Quel est le dernier plat ajouté ?</h3><br>
+  
+<div class="reponse">
+  <input type="radio" id="tata" name="drone" value="tata">
+  <label for="tata">La quiche lorraine</label>
+</div>
+  
+<div class ="reponse">
+ <input type="radio" id ="titi" name="drone"  value="titi" />
+ <label for = "titi" >La ratatouille  </label>
+</div>
+  
+<div class ="reponse">
+  <input type="radio" id="toto" name="drone"  value="toto" />
+ <label for ="toto" >Le gratin Dauphinois  </label>
+</div>
+</div>
+    <br>
+
+  <div class ="question">
+    <h3> Quel est le cours de cuisine le plus cher ?</h3><br>
+      <select id = "q2">
+        <option value="">Votre réponse :</option>
+        <option value="1">Saveur gourmandes</option>
+        <option value="2">Challenge culinaire</option>
+        <option value="3">L'élegance dans l'assiette</option>
+    </select>
+</div>
+    <br><br>
+<div class ="question">
+    <h3> Combien de legumes faut-il dans la ratatouille ?</h3><br>
+    <input type="text" id="q3" value ="Votre réponse :" onfocus = "this.value =''">
+</div>
+    <button onclick="corriger()" class ="valider">Valider</button><br>
+
+    <h2 id="resultat"></h2> <br>
+  <button onclick="correction()" class = "correction"> Correction ici</button>
+    <script>
+        function corriger() {
+            let score = 0;
+
+            var radios =  document.getElementsByName('drone');
+            var valeur;
+            for(var i = 0; i < radios.length; i++){
+            if(radios[i].checked){
+              if(radios[i].value == "titi")
+              score +=1;
+              }
+            }
+
+            let q2 = document.getElementById("q2").value;
+            if (q2 === "1") {
+                score+=1;
+            }
+
+            let q3 = document.getElementById("q3").value;
+            if (q3 === "5") {
+                score+=1;
+            }
+            if (score == 3){
+            document.getElementById("resultat").innerHTML =
+            "Votre score est de : " + score + "/3 <br> Bravo!";  
+            }else {
+            document.getElementById("resultat").innerHTML =
+            "Votre score est de : " + score + "/3";
+            }
+        }
+    </script>
+
+</body>
+</html>
