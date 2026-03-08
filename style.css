@@ -152,12 +152,12 @@ p, li, label, tr, td, th {
   font-size: clamp(17px, 1.5vw, 20px);
 }
 .question {
-    border: 3px solid Coral;
+    border: 3px solid Tomato;
     padding: 20px;
     border-radius: 12px;
     margin: 25px auto;
     width: 50%;
-    background-color: #f2f2f2;
+    background-color: LightSalmon;
     transition: all 0.4s ease;
 }
 
@@ -171,6 +171,7 @@ p, li, label, tr, td, th {
   border-radius: 12px;
   transition: all 0.2s ease;
   font-size: 18px;
+  background: white;
 }
 .valider:hover{
   transform: scale(1.1)
@@ -184,20 +185,49 @@ p, li, label, tr, td, th {
 .reponse label {
   display: block;
   padding: 12px;
-  background: #f2f2f2;
+  background: white;
   border-radius: 8px ;
   cursor: pointer;
   border: 2px solid transparent;
   transition: 0.5s ease;
   margin: 10px;
-  border-color: grey;
+  border-color: Tomato;
+  color: black;
 }
 
 .reponse input[type="radio"]:checked + label {
-  background: #cce5ff;
-  border-color: #3399ff;
+  background: coral;
+  border-color: Tomato;
+  color: white;
 }
 #q2, #q3 {
+  display: block;
+  padding: 12px;
+  background: white;
+  border-radius: 8px ;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.5s ease;
+  margin: 10px;
+  border-color: Tomato;
+  color: black;
+}
+#resultat{
+  margin-left: 25%;
+}
+.correction{
+  margin-left: 25%;
+  border: 3px solid Tomato;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  padding: 20px;
+  font-size: 18px;
+  background: white;
+}
+.correction:hover{
+  transform: scale(1.1)
+}
+#correction2, #correction3{
   display: block;
   padding: 12px;
   background: #f2f2f2;
@@ -207,18 +237,32 @@ p, li, label, tr, td, th {
   transition: 0.5s ease;
   margin: 10px;
   border-color: grey;
+  color: #237519;
+  margin-left: 25%;
+  background-color: white;
+}
+#correction1{
+  color: #237519;
+}
+.correctionh{
+  margin-left: 25%;
+}
+.titre{
+  color: white;
+  font-family: "Arial";
 }
 #resultat{
-  margin-left: 25%;
+  color: DarkSlateGray;
 }
-.correction{
-  margin-left: 25%;
+.recommencer{
+ padding: 20px;
+  margin-left: 75%;
   border: 3px solid Coral;
   border-radius: 12px;
   transition: all 0.2s ease;
-  padding: 20px;
   font-size: 18px;
+  background: white; 
 }
-.correction:hover{
-  transform: scale(1.1)
+.recommencer:hover{
+  transform: scale(1.1);
 }
